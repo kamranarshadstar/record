@@ -1,0 +1,44 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Microphone icon design for Record app -->
+    <!-- Microphone capsule -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,25 C61.7,25 68,31.3 68,39 L68,60 C68,67.7 61.7,74 54,74 C46.3,74 40,67.7 40,60 L40,39 C40,31.3 46.3,25 54,25 Z" />
+    <!-- Microphone stem -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M51,74 L57,74 L57,85 L51,85 Z" />
+    <!-- Sound waves (waveform) -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M32,54 C32,54 28,45 28,39" 
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M76,54 C76,54 80,45 80,39"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M26,64 C26,64 20,48 20,39"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M82,64 C82,64 88,48 88,39"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+</vector>

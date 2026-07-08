@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Record</string>
+    <string name="recording_notification_title">Recording in progress…</string>
+    <string name="recording_notification_text">Tap to open or stop recording</string>
+    <string name="dashboard_title">Record</string>
+    <string name="dashboard_ready_to_record">Ready to record</string>
+    <string name="dashboard_last_recording">Last Recording</string>
+    <string name="dashboard_duration_prefix">Duration: </string>
+    <string name="dashboard_transcription_prefix">Transcription: </string>
+    <string name="content_description_stop_recording">Stop Recording</string>
+    <string name="content_description_start_recording">Start Recording</string>
+    <string name="recording_indicator_text">Recording in progress…</string>
+    <string name="dashboard_preview_text">Dashboard Preview - Requires ViewModel in actual app</string>
+    <string name="recordings_search_placeholder">Search recordings...</string>
+    <string name="content_description_search">Search</string>
+    <string name="recordings_upload_all">Upload all</string>
+    <string name="recordings_no_recordings_found">No recordings found</string>
+    <string name="content_description_upload">Upload</string>
+    <string name="content_description_delete">Delete</string>
+    <string name="recordings_upload_status_prefix">Upload: </string>
+    <string name="content_description_pause">Pause</string>
+    <string name="content_description_stop">Stop</string>
+    <string name="content_description_play">Play</string>
+    <string name="recordings_list_preview_text">Recordings List Preview - Requires ViewModel in actual app</string>
+</resources>
