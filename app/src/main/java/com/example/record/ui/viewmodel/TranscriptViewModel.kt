@@ -152,7 +152,7 @@ class TranscriptViewModel(application: Application) : AndroidViewModel(applicati
     }
 
     private suspend fun doDeleteJob(clientId: String, jobId: String): Boolean = withContext(Dispatchers.IO) {
-        val url = "http://100.110.2.1:8001/api/jobs/$jobId"
+        val url = "${getServerUrl()}/api/jobs/$jobId"
         val request = Request.Builder()
             .url(url)
             .header("X-Client-ID", clientId)
@@ -163,9 +163,16 @@ class TranscriptViewModel(application: Application) : AndroidViewModel(applicati
             response.isSuccessful
         }
     }
-
+    private suspend fun getServerUrl(): String {
+        val prefs = preferencesRepository.userPreferencesFlow.first()
+        val url = prefs.uploadServerUrl.trimEnd('/')
+        // Strip any path — keep only scheme + host + port
+        val uri = android.net.Uri.parse(url)
+        return "${uri.scheme}://${uri.host}${if (uri.port != -1) ":${uri.port}" else ""}"
+    }
     private suspend fun doFetchJobs(clientId: String, limit: Int, offset: Int): List<JobModel> = withContext(Dispatchers.IO) {
-        val url = "http://100.110.2.1:8001/api/jobs?limit=$limit&offset=$offset"
+        Log.d("API", "Fetching: ${getServerUrl()}/api/jobs?limit=$limit&offset=$offset")
+        val url = "${getServerUrl()}/api/jobs?limit=$limit&offset=$offset"
         val request = Request.Builder()
             .url(url)
             .header("X-Client-ID", clientId)
